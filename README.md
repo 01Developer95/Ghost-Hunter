@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./media/header.png" alt="Ghost Hunter" width="100%">
+  <img src="https://raw.githubusercontent.com/01Developer95/Ghost-Hunter/main/media/header.png" alt="Ghost Hunter" width="100%">
 </div>
 
 <div align="center">

@@ -1,16 +1,27 @@
 {
     "name": "ghost-import-hunter",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Deterministic tool to detect AI hallucinations and code bloat by verifying import safety against installed node_modules",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/01Developer95/Ghost-Hunter.git"
+    },
     "main": "dist/index.js",
     "bin": {
-        "ghost-hunter": "./dist/index.js"
+        "ghost-import-hunter": "./dist/index.js"
     },
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && node scripts/add-shebang.js",
         "start": "node dist/index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepublishOnly": "npm run build"
     },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE",
+        "media"
+    ],
     "keywords": [
         "ai",
         "hallucination",
