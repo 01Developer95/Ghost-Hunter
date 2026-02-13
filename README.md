@@ -68,12 +68,12 @@ When a hallucination is found, Ghost Hunter uses `chalk` to highlight the error 
 
 ### npx (Recommended)
 ```bash
-npx ghost-hunter .
+npx ghost-import-hunter .
 ```
 
 ### Global Install
 ```bash
-npm install -g ghost-hunter
+npm install -g ghost-import-hunter
 ```
 
 ---
@@ -83,17 +83,17 @@ npm install -g ghost-hunter
 ### Basic Usage
 ```bash
 # Scan current directory
-npx ghost-hunter .
+npx ghost-import-hunter .
 
 # Scan specific directory
-npx ghost-hunter ./src/components
+npx ghost-import-hunter ./src/components
 ```
 
 ### CI/CD Integration
 Add to your GitHub Actions or GitLab CI:
 ```yaml
 - name: Detect Hallucinations
-  run: npx ghost-hunter .
+  run: npx ghost-import-hunter .
 ```
 
 ### Command Line Options
